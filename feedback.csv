@@ -1,0 +1,4 @@
+movie_title,name,review,SentimentScore
+Batman,keshav yadav,"A beautiful, heartfelt epic that proves that quiet moments can be as powerful as grand battles. The chemistry between the leads is electric, carrying a poignant story of hope against all odds.",/static/Thumbs up.svg
+Batman,keshav yadav,"This movie is an incoherent mess. The plot is a series of baffling decisions, the dialogue is clunky, and the special effects look like a low-budget video game from a decade ago.",/static/Thumbs down.svg
+Batman,keshav yadav,"A lean, mean thriller that doesn't waste a single second. The tension is palpable from the first frame, and the clever script keeps you guessing until the very last twist. Pure cinematic adrenaline.",/static/Thumbs up.svg

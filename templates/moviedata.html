@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmFeel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Genos:ital,wght@0,100..900;1,100..900&family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="..\static\Favicon\Favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #0b1d3a;
+      font-family: "Genos", sans-serif;
+      color: #c9c9ff;
+      margin: 0;
+      padding: 0;
+      background-image: url("../static/23985425_6880419.jpg");
+      background-repeat:repeat-y;
+      background-size: 80%;
+      background-position-x: 400px;
+
+    }
+    .left-cont {
+      background-color: #112b4d;
+      position: fixed;
+      width: 28.2%;
+      height: 100%;
+      box-shadow: 20px 0px 20px 0 rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .left-cont img {
+      position: relative;
+      top: 10%;
+      /* left: 13%; */
+      height: 150px;
+    }
+
+    .left-cont h2 {
+      position: relative;
+      top: 10%;
+      /* left: 5%; */
+    }
+
+    .left-cont p {
+      position: relative;
+      top: 5%;
+      /* left: 5%; */
+      text-align: justify;
+      width: 90%;
+      font-size: 22px;
+    }
+
+    .left-cont input {
+      position: relative;
+      top: -50px;
+      left: 15%;
+      border: 0px;
+      width: 340px;
+      height: 30px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-family: "Genos", sans-serif;
+    }
+
+    .left-cont button {
+      position: relative;
+      /* top: 50px; */
+      left: -36.6%;
+      border: 0px;
+      width: 150px;
+      height: 35px;
+      border-radius: 20px;
+      background-color: #00ced1;
+      font-family: "Genos", sans-serif;
+      font-size: 20px;
+    }
+    .right-cont {
+    width: 71.8%;
+    margin-left: 28.2%;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    min-height: 100vh;
+    /* backdrop-filter: blur(10px); */
+  }
+
+  .movie-grid {
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color: #0b1d3a97;
+    width: 90%;
+    height: 100%;
+    top: 10px;
+    left: 30px;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+    .movie-grid iframe{
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+  }
+
+  .infobox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .infobox img{
+      /* width: 100%; */
+      height: 100%;
+      height: 500px;
+      margin-top: 2rem;
+      border-radius: 20px;
+  }
+
+  .txt{
+      position: relative;
+      left: 2rem;
+      width: 68%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+
+  .txtinfo h1{
+      font-size: 80px;
+      display: inline;
+
+  }
+
+  .txtinfo p{
+      text-align: justify;
+      font-size: 25px;
+
+  }
+
+  .feedback{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+
+  .feedback-txt{
+    margin-top: 2rem;
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+    /* background-color: #0000004e; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 10px;
+
+  }
+
+  .box{
+    background-color: #0b1d3a;
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box p{
+    text-align: justify;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .box h2{
+    text-align: justify;
+    font-size: 25px;
+    width: 93%;
+  }
+
+  .hf-af{
+    position: relative;
+    left: 1.5rem;
+    width: 50px;
+}
+  .feedbackform{
+    background-color: #0b1d3a;
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+
+  
+  .feedback-form-container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            position: relative;
+        }
+
+        .feedbacktxtbox{
+            position: relative;
+            padding: 20px;
+            height: 150px;
+            top: -100px;
+          }
+          
+          
+          .feedbacktxtbox h2{
+            width: 100%;
+            padding-left: 2rem;
+        font-family: "Genos", sans-serif;
+
+            font-weight: 400;
+            font-size: 6vw;
+            line-height: 100%;
+            /* text-align: right; */
+
+        }
+
+
+        .feedback-form{
+            position: relative;
+            flex: 1;
+            /* top: -100px; */
+            padding: 2rem;
+        }
+
+        .fd-form {
+        width: 105%;
+        /* box-shadow: 0 0 40px -10px #000; */
+        padding: 20px 30px;
+        box-sizing: border-box;
+        position: relative;
+        }
+
+
+        .fd-form textarea{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        font-family: "Genos", sans-serif;
+        font-size: 20px;
+        transition: all 0.3s;
+        border-bottom: 2px solid #bebed2;
+        color: #c9c9ff;
+        
+      }
+      .fd-form input {
+        width: 100%;
+        font-family: "Genos", sans-serif;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all 0.3s;
+        border-bottom: 2px solid #bebed2;
+        color: #c9c9ff;
+        font-size: 20px;
+        }
+        .fd-form input:focus {
+        border-bottom: 2px solid #78788c;
+        }
+
+        .fd-form p:before {
+        content: attr(type);
+        display: block;
+        margin: 28px 0 0;
+        font-size: 20px;
+        color: #ffffff;
+        }
+    
+
+        .button-50 {
+          font-family: "Genos", sans-serif;
+        appearance: button;
+        background-color: #00ced1;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 10px 0;
+        overflow: visible;
+        padding: 12px 40px;
+        text-align: center;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        }
+
+        .button-50:focus {
+        text-decoration: none;
+        }
+
+        .button-50:hover {
+        text-decoration: none;
+        }
+
+        .button-50:active {
+        box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+        outline: 0;
+        }
+
+        .button-50:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+        }
+
+
+</style>
+  <body>
+    <div class="left-cont">
+      <img src="..\static\Favicon\Logo.svg" alt="" />
+      <h2>Discover Your Next Favorite Film</h2>
+      <p>
+        Our powerful recommendation engine suggests movies you'll love based on
+        films you already enjoy. Just tell us a movie you liked, and we'll
+        connect you with similar titles, helping you explore new genres and find
+        hidden gems.
+      </p>
+      <h2 style="position: relative; top: 10px">
+        See What People Really Think
+      </h2>
+      <p style="position: relative; top: -30px; margin-bottom: 80px;">
+        Go beyond simple star ratings. With our unique sentiment analysis
+        feature, we analyze movie reviews to give you a clear, objective summary
+        of public opinion. Find out if the reviews are generally positive or
+        negative, so you can make an informed decision on whether to watch or
+        skip.
+      </p>
+      <form method="POST" class="form">
+      <div class="search-container">
+        <input type="text" placeholder="Search..." name="name" />
+        <button type="submit" role="button">Search</button>
+      </div>
+    </form>
+
+    <img
+    style="width: 150px; position: relative; top: 0px"
+    src="/static/Favicon/Sicon.svg"
+    alt=""
+  />
+    </div>
+
+    <div class="right-cont">
+        <div class="movie-grid">
+        {% if movie.video_key %}
+            <iframe src="https://www.youtube.com/embed/{{ movie.video_key }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        {% else %}
+        <div class="video-container" style="display: flex; align-items: center; justify-content: center; color: #aaa;">
+            No trailer or video available.
+        </div>
+        {% endif %}
+                <div class="infobox">
+                    <img
+                    class="movie-poster"
+                    src="{{ movie.poster }}"
+                    alt="{{ movie.title }} Poster"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x900/4a4a4a/ffffff?text=No+Poster';"
+                  />
+                  <div class="txt">
+                      <div class="txtinfo">
+                          <h1>{{ movie.title }}</h1>
+                    {% if movie.overview %}
+                          <p>
+                              {{ movie.overview }}
+                          </p>
+                        </div>
+                      {% else %}
+                      <div class="null-txtinfo">
+
+                        <p>
+                          No description available for this movie.
+                          
+                        </p>
+                      </div>
+                      {% endif %}
+                </div>
+                </div>
+            <div class="feedback">
+              <div style="writing-mode: vertical-rl;
+                          text-orientation: upright;
+                          font-size: 40px;">
+                <p>REVIEWS</p>
+              </div>
+              <div class="feedback-txt">
+                {% if reviews %}
+                {% for review in reviews %}             
+                <div class="box">
+                  <p>" {{ review.review }} "</p>
+                  <h2>By {{ review.name }}</h2>
+                    <img class="hf-af" src="{{ review.SentimentScore }}" alt="">
+                  </div>
+                  {% endfor %}
+            {% else %}
+                    <p>No reviews yet for this movie.</p>
+            {% endif %}
+                    </div>
+                    </div>
+
+
+
+
+                    <div class="feedback">
+                      <div style="writing-mode: vertical-rl;
+                      text-orientation: upright;
+                      font-size: 40px;">
+            <p>FEEDBACK</p>
+          </div>
+                      <div class="feedbackform">
+
+                        <div class="feedback-form-container">
+                          <div class="feedbacktxtbox">
+                              <h2>We Value Your Feedback!</h2>
+                              </div>
+                          <div class="vertical-line"></div>
+      
+                          <div class="feedback-form">
+                              <form method="POST" class="fd-form">
+                              </p><input type="text" name="name" placeholder="Write your name here.."></input></p>
+                              <p><textarea name="feedback" placeholder="What would you like to tell us.."></textarea></p>
+                              <button class="button-50" role="button" type="submit">Submit</button>
+                          </form>
+                          </div>
+      
+      
+                      </div>
+
+                      </div>
+                      
+                          
+                            </div>
+        </div>
+    </div>
+  </body>
+</html>
