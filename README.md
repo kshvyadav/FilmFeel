@@ -1,8 +1,8 @@
-# FimlFeel: Movie Recommendation & Sentiment Analysis Engine
+# FilmFeel: Movie Recommendation & Sentiment Analysis Engine
 
-![FimlFeel Logo](https://github.com/kshvyadav/FilmFeel/blob/fdd2faa5c3f9edf31f8a2260bbd2253243086b1e/static/logo.png)
+![FilmFeel Logo](https://github.com/kshvyadav/FilmFeel/blob/fdd2faa5c3f9edf31f8a2260bbd2253243086b1e/static/logo.png)
 
-FimlFeel is a web application that provides movie recommendations and performs sentiment analysis on movie reviews. Built with Python and the Flask framework, it leverages a combination of machine learning techniques to offer a personalized and insightful experience for movie lovers.
+FilmFeel is a web application that provides movie recommendations and performs sentiment analysis on movie reviews. Built with Python and the Flask framework, it leverages a combination of machine learning techniques to offer a personalized and insightful experience for movie lovers.
 
 ## ✨ Features
 
@@ -21,7 +21,7 @@ FimlFeel is a web application that provides movie recommendations and performs s
 
 ## 🧠 How it Works
 
-The FimlFeel engine operates on two core machine learning models:
+The FilmFeel engine operates on two core machine learning models:
 
 1.  **Recommendation Engine:**
     - The system ingests a comprehensive movie dataset, including metadata like genres, cast, crew, and plot keywords.
